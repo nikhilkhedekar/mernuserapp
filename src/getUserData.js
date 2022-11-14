@@ -4,7 +4,7 @@ import axios from "axios";
 const GetUserData = () => {
     const [id, setId] = useState('') 
     const onSubmitHandler = async () => {
-        const getUserData = await axios.get("http://localhost:8080/api/v1/user/userData", { _id: id });
+        const getUserData = await axios.get("https://mernuserapp.herokuapp.com/api/v1/user/userData", { _id: id });
         console.log("getUserData", getUserData);
     }
     return (

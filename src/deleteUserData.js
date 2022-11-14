@@ -4,7 +4,7 @@ import axios from "axios";
 const DeleteUserData = () => {
     const [id, setId] = useState('') 
     const onSubmitHandler = async () => {
-        const deleteUserData = await axios.delete("http://localhost:8080/api/v1/user/userData", { _id: id });
+        const deleteUserData = await axios.delete("https://mernuserapp.herokuapp.com/api/v1/user/userData", { _id: id });
         console.log("deleteUserData", deleteUserData);
     }
     return (

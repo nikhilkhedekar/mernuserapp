@@ -16,7 +16,7 @@ const PutUserData = () => {
     }
     const onSubmitHandler = async e => {
         e.preventDefault();
-        const putUserData = await axios.put("http://localhost:8080/api/v1/user/userData", userDetails);
+        const putUserData = await axios.put("https://mernuserapp.herokuapp.com/api/v1/user/userData", userDetails);
         console.log("putUserData", putUserData);
     }
     return(

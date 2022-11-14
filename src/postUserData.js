@@ -15,7 +15,7 @@ const PostUserData = () => {
     }
     const onSubmitHandler = async e => {
         e.preventDefault();
-        const postUserData = await axios.post("http://localhost:8080/api/v1/user/userData", userDetails);
+        const postUserData = await axios.post("https://mernuserapp.herokuapp.com/api/v1/user/userData", userDetails);
         console.log("postUserData", postUserData);
     }
     return(

@@ -15,7 +15,7 @@ const PatchUserData = () => {
     }
     const onSubmitHandler = async e => {
         e.preventDefault();
-        const patchUserData = await axios.patch("http://localhost:8080/api/v1/user/userData", userDetails);
+        const patchUserData = await axios.patch("https://mernuserapp.herokuapp.com/api/v1/user/userData", userDetails);
         console.log("patchUserData", patchUserData);
     }
     return (
